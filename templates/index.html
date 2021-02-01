@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dnit Crawler</title>
+    <style>
+        h1 {
+            font-family: Arial;
+            font: size 30pt;
+            color: blue;
+
+        }
+        h2 {
+            font-family: Arial;
+            font: size 30pt;
+            color: fuchsia;
+        }
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    </br><h1>Crawler Dnit</h1></p>
+    <h2>Criado Para Hosticia</h2>
+    <div>
+    <ul>
+        Serviço contruído com python e Flask para consulta de Multas de</br>
+        veículos através do Site http://servicos.dnit.gov.br/multas/</br>
+        Usa Quebra de Captcha</br>                                        
+        Mais informações em https://anti-captcha.com/mainpage</br>
+    </ul>
+    </div>
+    <div id="menu-principal">
+    <ul>
+        <li>
+            Página inicial  http://localhost:5000/
+        </li>
+    </ul>
+    <ul>
+        <li>
+            Consulta um veículo por método GET http://localhost:5000/veiculo?placa=&renavam=
+        </li>
+    </ul>
+    <ul>
+        <li>
+            Consulta mais de um veículo por método POST http://localhost:5000/veiculos</br>
+            Formdata Exemplo:</br>
+            '[</br>
+                {"placa": "1000", "renavam": "0001"}, </br>
+                {"placa": "2000", "renavam": "0002"}, </br>
+                {"placa": "3000", "renavam": "0003"}</br>
+            ]'</br>
+
+        </li>
+    </ul>
+    </div>
+
+</body>
+</html>
